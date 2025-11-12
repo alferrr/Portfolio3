@@ -31,11 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
       submitButton.innerHTML = '<span class = "spinner"></span> Loading...';
       submitButton.disabled = true;
 
-      localStorage.setItem("username", name);
+      localStorage.setItem("userName", name);
       localStorage.setItem("userRole", role);
 
       //sheets
-
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbxL-cAaUs2qra_Of4VOLCgfuaPTKZB_LSOWEMBdK1bkOY9mPmig4188L_OyOQyJy0_0YA/exec";
 
