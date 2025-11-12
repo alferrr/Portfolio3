@@ -107,12 +107,17 @@
     }
 
     .right {
-      padding-top: 380px;
+      padding-top: 300px;
+    }
+
+    .left {
+      padding-top: 20px;
     }
     .left,
     .right {
       position: absolute;
       width: 100%;
+      padding: ;
 
       .block {
         flex-direction: column;
