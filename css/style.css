@@ -32,7 +32,7 @@ body {
   position: relative;
   min-height: 85dvh;
 
-  background-image: url(images/hero.png);
+  background-image: url(../images/hero.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -145,14 +145,14 @@ body {
   }
 
   .num1 {
-    background-image: url(images/laptop.jpg);
+    background-image: url(../images/laptop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .num2 {
-    background-image: url(images/zoom.png);
+    background-image: url(../images/zoom.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
