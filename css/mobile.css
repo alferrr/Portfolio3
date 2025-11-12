@@ -125,7 +125,7 @@
   .container {
     position: relative;
 
-    min-height: 220dvh;
+    min-height: 230dvh;
     .vert {
       display: none;
     }
