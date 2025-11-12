@@ -28,7 +28,7 @@
 }
 
 .getstarted {
-  min-height: 125dvh;
+  min-height: 100dvh;
   header {
     font-size: 35px;
   }
@@ -38,10 +38,8 @@
     gap: 50px;
   }
 
-  .num2 {
-    p {
-      padding-bottom: 50px;
-    }
+  .instructions {
+    margin-bottom: 20px;
   }
 }
 
@@ -93,9 +91,9 @@
 }
 
 .page2 {
-  min-height: 260dvh;
+  min-height: 200dvh;
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 20px 0 0;
   }
 
@@ -134,5 +132,41 @@
     font-size: 1rem;
     max-width: 80%;
     margin-bottom: 20px;
+  }
+}
+
+footer {
+  display: block;
+
+  .about {
+    display: block;
+    width: 100%;
+
+    h2 {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  .vert {
+    display: none;
+  }
+
+  p {
+    width: 90%;
+    margin: 0 10px;
+  }
+
+  .contact {
+    display: block;
+    margin: 0 auto;
+
+    h2 {
+      display: none;
+    }
+
+    .icons {
+      padding: 50px 0;
+    }
   }
 }
