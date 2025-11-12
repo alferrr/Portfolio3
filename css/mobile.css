@@ -1,0 +1,137 @@
+.coverpage {
+  header {
+    flex-direction: column;
+    margin: 0;
+
+    h1 {
+      padding-top: 5px;
+      font-size: 35px;
+      text-shadow: 0 0 50px black;
+    }
+
+    nav ul {
+      position: static;
+      gap: 30px;
+    }
+
+    .line {
+      top: 80px;
+      width: 100%;
+    }
+  }
+
+  main {
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0 0 40px black;
+  }
+}
+
+.getstarted {
+  min-height: 125dvh;
+  header {
+    font-size: 35px;
+  }
+
+  .blocks {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .num2 {
+    p {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.contents {
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 30px;
+    .block {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .block:hover {
+      transform: none;
+      border-top-color: var(--dirty);
+    }
+  }
+}
+
+.intro {
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 48px;
+  }
+
+  p {
+    text-align: justify;
+    margin: 0 auto;
+  }
+}
+
+.page1 {
+  h2 {
+    font-size: 3rem;
+  }
+  .container {
+    gap: 32px;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    .block {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.page2 {
+  min-height: 260dvh;
+  h2 {
+    font-size: 3rem;
+    padding: 20px 0 0;
+  }
+
+  .container {
+    margin-bottom: 30px;
+
+    .vert {
+      display: none;
+    }
+
+    .right {
+      padding-top: 380px;
+    }
+    .left,
+    .right {
+      position: absolute;
+      width: 100%;
+
+      .block {
+        flex-direction: column;
+        width: 90%;
+        min-height: 250px;
+
+        margin: 0 auto;
+
+        .vertl {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.analysis {
+  p {
+    font-size: 1rem;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}

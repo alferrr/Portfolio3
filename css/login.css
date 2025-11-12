@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --orange: #ed6746;
+  --pink: #e89588;
+  --violet: #e19bc9;
+  --dirty: #e4e2dd;
+  --nude: #ebae85;
+}
+
+body {
+  position: relative;
+  height: 100dvh;
+  background-image: url(/images/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 70px;
+  width: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2.5rem;
+  height: auto;
+
+  border-radius: 50px;
+
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--orange);
+}
+
+input {
+  margin-top: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #e5e5e5;
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+input:focus {
+  transform: scale(1.1);
+  border-color: var(--orange);
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #e5e5e5;
+  outline: none;
+  padding: 10px 0;
+  font-size: 16px;
+  transition: 0.3s ease;
+  background: transparent;
+}
+
+.input-group input:focus {
+  border-color: var(--orange);
+  transform: scale(1.02);
+}
+
+.input-group label {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  color: #999;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: 15px;
+  font-size: 13px;
+  color: var(--orange);
+}
+.choice {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.choice label {
+  display: block;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto 0;
+  background-color: var(--orange);
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: var(--orange);
+  background-color: var(--nude);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+
+  color: var(--orange);
+  background-color: var(--violet);
+}
+
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.message-box {
+  margin-top: 12px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.message-box.show {
+  display: block;
+  opacity: 1;
+}
+
+.message-box.error {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  border: 1px solid #ffb3b3;
+}
+
+.message-box.success {
+  background-color: #e6ffe6;
+  color: #006600;
+  border: 1px solid #99ff99;
+}

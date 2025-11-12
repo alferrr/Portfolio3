@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <title>Welcome!</title>
+    <link
+      rel="shortcut icon"
+      href="images/icons/favicon1.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <img src="images/icons/favicon1.png" alt="logo" class="logo" />
+
+    <div class="card">
+      <form id="loginForm">
+        <h1>What's your name?</h1>
+        <div class="input-group">
+          <input type="text" id="name" placeholder=" " required />
+          <label for="name">Enter your name...</label>
+        </div>
+        <div class="choice">
+          <label>
+            <input type="radio" name="role" value="student" />
+            Student
+          </label>
+          <label>
+            <input type="radio" name="role" value="teacher" />
+            Teacher
+          </label>
+        </div>
+        <button type="submit">Continue</button>
+
+        <div id="messageBox" class="message-box"></div>
+      </form>
+    </div>
+
+    <script src="/js/app.js" defer></script>
+  </body>
+</html>
