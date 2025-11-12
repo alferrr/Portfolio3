@@ -303,7 +303,7 @@ body {
 
 .page2 {
   position: relative;
-  min-height: 250dvh;
+  min-height: 100dvh;
   background-color: var(--orange);
 
   h2 {
@@ -314,6 +314,7 @@ body {
   }
 
   .container {
+    height: 100%;
     display: flex;
     justify-content: center;
     gap: 48px;
@@ -351,12 +352,13 @@ body {
     }
 
     .vert {
-      height: 229dvh;
+      position: relative;
+      height: 200dvh;
       width: 5px;
       background-color: var(--dirty);
       border-radius: 100px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+      /* border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; */
     }
     .left {
       display: flex;
