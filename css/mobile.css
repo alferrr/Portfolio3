@@ -91,6 +91,7 @@
 }
 
 .page2 {
+  position: relative;
   min-height: 200dvh;
   h2 {
     font-size: 2rem;
@@ -98,8 +99,9 @@
   }
 
   .container {
-    margin-bottom: 30px;
+    position: relative;
 
+    min-height: 220dvh;
     .vert {
       display: none;
     }
