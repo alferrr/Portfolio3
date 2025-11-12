@@ -49,6 +49,8 @@ body {
       font-family: "Montserrat", sans-serif;
       color: white;
       letter-spacing: 5px;
+
+      animation: fadedown 1s ease;
     }
 
     nav ul {
@@ -57,6 +59,8 @@ body {
       top: 25px;
       display: flex;
       gap: 70px;
+
+      animation: fadedown 1s ease;
     }
 
     nav ul li {
@@ -83,6 +87,8 @@ body {
       height: 4px;
       border-radius: 20px;
       background-color: white;
+
+      animation: expand 2s ease;
     }
   }
 
@@ -98,6 +104,31 @@ body {
 
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+
+@keyframes fadedown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 33%;
+  }
 }
 
 .getstarted {

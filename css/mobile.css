@@ -1,3 +1,11 @@
+:root {
+  --orange: #ed6746;
+  --pink: #e89588;
+  --violet: #e19bc9;
+  --dirty: #e4e2dd;
+  --nude: #ebae85;
+}
+
 .coverpage {
   header {
     flex-direction: column;
@@ -14,6 +22,10 @@
       gap: 30px;
     }
 
+    nav ul li a:hover {
+      color: var(--orange);
+    }
+
     .line {
       top: 80px;
       width: 100%;
@@ -24,6 +36,18 @@
     text-align: center;
     font-size: 35px;
     text-shadow: 0 0 40px black;
+  }
+}
+
+@keyframes expand {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
 
