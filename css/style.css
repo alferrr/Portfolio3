@@ -301,8 +301,8 @@ body {
     gap: 48px;
 
     .block {
-      width: 30%;
-      height: 70vh;
+      width: 20%;
+      height: 68vh;
       background-color: white;
       border: 5px solid var(--violet);
       border-radius: 30px;
@@ -314,19 +314,14 @@ body {
         color: var(--orange);
       }
 
-      ul,
-      dd {
-        padding-left: 30px;
+      .hex {
+        font-size: 1.3rem;
       }
 
-      li {
-        padding: 20px 0 5px;
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: var(--orange);
-      }
-      dd {
-        font-size: 1rem;
+      p {
+        text-align: justify;
+        padding-top: 20px;
+        font-size: 0.95rem;
       }
     }
   }
